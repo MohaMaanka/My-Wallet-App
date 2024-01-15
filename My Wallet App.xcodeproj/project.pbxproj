@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F17E052B526D14002B5C43 /* My_Wallet_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E042B526D14002B5C43 /* My_Wallet_AppApp.swift */; };
+		18F17E072B526D14002B5C43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E062B526D14002B5C43 /* ContentView.swift */; };
+		18F17E092B526D16002B5C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F17E082B526D16002B5C43 /* Assets.xcassets */; };
+		18F17E0C2B526D16002B5C43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F17E0B2B526D16002B5C43 /* Preview Assets.xcassets */; };
+		18F17E162B526D16002B5C43 /* My_Wallet_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E152B526D16002B5C43 /* My_Wallet_AppTests.swift */; };
+		18F17E202B526D16002B5C43 /* My_Wallet_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E1F2B526D16002B5C43 /* My_Wallet_AppUITests.swift */; };
+		18F17E222B526D16002B5C43 /* My_Wallet_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E212B526D16002B5C43 /* My_Wallet_AppUITestsLaunchTests.swift */; };
+		18F17E372B526DE0002B5C43 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E332B526DE0002B5C43 /* TransactionViewModel.swift */; };
+		18F17E382B526DE0002B5C43 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E342B526DE0002B5C43 /* SideMenuViewModel.swift */; };
+		18F17E392B526DE0002B5C43 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E352B526DE0002B5C43 /* Transaction.swift */; };
+		18F17E3A2B526DE0002B5C43 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E362B526DE0002B5C43 /* Validation.swift */; };
+		18F17E432B526E2F002B5C43 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E3F2B526E2F002B5C43 /* SideMenuView.swift */; };
+		18F17E442B526E2F002B5C43 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E402B526E2F002B5C43 /* SideMenuOptionRowView.swift */; };
+		18F17E462B526E2F002B5C43 /* CustomButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E422B526E2F002B5C43 /* CustomButtonText.swift */; };
+		18F17E492B526E39002B5C43 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E472B526E39002B5C43 /* LoginView.swift */; };
+		18F17E4A2B526E39002B5C43 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E482B526E39002B5C43 /* RegistrationView.swift */; };
+		18F17E502B526E48002B5C43 /* PhoneBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E4B2B526E48002B5C43 /* PhoneBookView.swift */; };
+		18F17E512B526E48002B5C43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E4C2B526E48002B5C43 /* HomeView.swift */; };
+		18F17E522B526E48002B5C43 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E4D2B526E48002B5C43 /* ConfirmationView.swift */; };
+		18F17E532B526E48002B5C43 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E4E2B526E48002B5C43 /* OutputView.swift */; };
+		18F17E542B526E48002B5C43 /* InputAmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E4F2B526E48002B5C43 /* InputAmountView.swift */; };
+		18F17E562B526F1B002B5C43 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E552B526F1B002B5C43 /* WelcomeView.swift */; };
+		18F17E582B5273DB002B5C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18F17E572B5273DB002B5C43 /* GoogleService-Info.plist */; };
+		18F17E5B2B5274B2002B5C43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 18F17E5A2B5274B2002B5C43 /* FirebaseAuth */; };
+		18F17E5D2B5274B2002B5C43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 18F17E5C2B5274B2002B5C43 /* FirebaseFirestore */; };
+		18F17E5F2B5274B2002B5C43 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18F17E5E2B5274B2002B5C43 /* FirebaseFirestoreSwift */; };
+		18F17E612B52771A002B5C43 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E602B52771A002B5C43 /* Profile.swift */; };
+		18F17E632B5277C0002B5C43 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E622B5277C0002B5C43 /* AuthService.swift */; };
+		18F17E652B527FF9002B5C43 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E642B527FF9002B5C43 /* MainView.swift */; };
+		18F17E672B52809C002B5C43 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E662B52809C002B5C43 /* AuthView.swift */; };
+		18F17E6A2B52C7B3002B5C43 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F17E692B52C7B3002B5C43 /* ResetPasswordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F17E122B526D16002B5C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F17DF92B526D14002B5C43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F17E002B526D14002B5C43;
+			remoteInfo = "My Wallet App";
+		};
+		18F17E1C2B526D16002B5C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F17DF92B526D14002B5C43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F17E002B526D14002B5C43;
+			remoteInfo = "My Wallet App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F17E012B526D14002B5C43 /* My Wallet App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Wallet App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F17E042B526D14002B5C43 /* My_Wallet_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Wallet_AppApp.swift; sourceTree = "<group>"; };
+		18F17E062B526D14002B5C43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18F17E082B526D16002B5C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F17E0B2B526D16002B5C43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18F17E112B526D16002B5C43 /* My Wallet AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Wallet AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F17E152B526D16002B5C43 /* My_Wallet_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Wallet_AppTests.swift; sourceTree = "<group>"; };
+		18F17E1B2B526D16002B5C43 /* My Wallet AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Wallet AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F17E1F2B526D16002B5C43 /* My_Wallet_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Wallet_AppUITests.swift; sourceTree = "<group>"; };
+		18F17E212B526D16002B5C43 /* My_Wallet_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Wallet_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18F17E332B526DE0002B5C43 /* TransactionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		18F17E342B526DE0002B5C43 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		18F17E352B526DE0002B5C43 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		18F17E362B526DE0002B5C43 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		18F17E3F2B526E2F002B5C43 /* SideMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		18F17E402B526E2F002B5C43 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
+		18F17E422B526E2F002B5C43 /* CustomButtonText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonText.swift; sourceTree = "<group>"; };
+		18F17E472B526E39002B5C43 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		18F17E482B526E39002B5C43 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		18F17E4B2B526E48002B5C43 /* PhoneBookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookView.swift; sourceTree = "<group>"; };
+		18F17E4C2B526E48002B5C43 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18F17E4D2B526E48002B5C43 /* ConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		18F17E4E2B526E48002B5C43 /* OutputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
+		18F17E4F2B526E48002B5C43 /* InputAmountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputAmountView.swift; sourceTree = "<group>"; };
+		18F17E552B526F1B002B5C43 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		18F17E572B5273DB002B5C43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18F17E602B52771A002B5C43 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		18F17E622B5277C0002B5C43 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		18F17E642B527FF9002B5C43 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		18F17E662B52809C002B5C43 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		18F17E692B52C7B3002B5C43 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F17DFE2B526D14002B5C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F17E5B2B5274B2002B5C43 /* FirebaseAuth in Frameworks */,
+				18F17E5D2B5274B2002B5C43 /* FirebaseFirestore in Frameworks */,
+				18F17E5F2B5274B2002B5C43 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F17E0E2B526D16002B5C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F17E182B526D16002B5C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185ED0042B5BBD0D0042F120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E4C2B526E48002B5C43 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186C6E762B5BB64D006DC0DC /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				185ED0042B5BBD0D0042F120 /* View */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		186C6E792B5BB6CB006DC0DC /* Confirmation View */ = {
+			isa = PBXGroup;
+			children = (
+				186C6E7A2B5BB6D6006DC0DC /* View */,
+			);
+			path = "Confirmation View";
+			sourceTree = "<group>";
+		};
+		186C6E7A2B5BB6D6006DC0DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E4D2B526E48002B5C43 /* ConfirmationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186C6E7C2B5BB6F0006DC0DC /* Amount View */ = {
+			isa = PBXGroup;
+			children = (
+				186C6E7D2B5BB6F8006DC0DC /* View */,
+			);
+			path = "Amount View";
+			sourceTree = "<group>";
+		};
+		186C6E7D2B5BB6F8006DC0DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E4F2B526E48002B5C43 /* InputAmountView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186C6E7F2B5BB713006DC0DC /* Output  View */ = {
+			isa = PBXGroup;
+			children = (
+				186C6E822B5BB7F1006DC0DC /* View */,
+			);
+			path = "Output  View";
+			sourceTree = "<group>";
+		};
+		186C6E802B5BB7AB006DC0DC /* Phone View */ = {
+			isa = PBXGroup;
+			children = (
+				186C6E812B5BB7DA006DC0DC /* View */,
+			);
+			path = "Phone View";
+			sourceTree = "<group>";
+		};
+		186C6E812B5BB7DA006DC0DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E4B2B526E48002B5C43 /* PhoneBookView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186C6E822B5BB7F1006DC0DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E4E2B526E48002B5C43 /* OutputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F17DF82B526D14002B5C43 = {
+			isa = PBXGroup;
+			children = (
+				18F17E3B2B526DFB002B5C43 /* Core */,
+				18F17E322B526DD1002B5C43 /* Model  */,
+				18F17E032B526D14002B5C43 /* My Wallet App */,
+				18F17E142B526D16002B5C43 /* My Wallet AppTests */,
+				18F17E1E2B526D16002B5C43 /* My Wallet AppUITests */,
+				18F17E022B526D14002B5C43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18F17E022B526D14002B5C43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E012B526D14002B5C43 /* My Wallet App.app */,
+				18F17E112B526D16002B5C43 /* My Wallet AppTests.xctest */,
+				18F17E1B2B526D16002B5C43 /* My Wallet AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F17E032B526D14002B5C43 /* My Wallet App */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E682B5299AA002B5C43 /* View */,
+				18F17E042B526D14002B5C43 /* My_Wallet_AppApp.swift */,
+				18F17E062B526D14002B5C43 /* ContentView.swift */,
+				18F17E572B5273DB002B5C43 /* GoogleService-Info.plist */,
+				18F17E082B526D16002B5C43 /* Assets.xcassets */,
+				18F17E0A2B526D16002B5C43 /* Preview Content */,
+			);
+			path = "My Wallet App";
+			sourceTree = "<group>";
+		};
+		18F17E0A2B526D16002B5C43 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E0B2B526D16002B5C43 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18F17E142B526D16002B5C43 /* My Wallet AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E152B526D16002B5C43 /* My_Wallet_AppTests.swift */,
+			);
+			path = "My Wallet AppTests";
+			sourceTree = "<group>";
+		};
+		18F17E1E2B526D16002B5C43 /* My Wallet AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E1F2B526D16002B5C43 /* My_Wallet_AppUITests.swift */,
+				18F17E212B526D16002B5C43 /* My_Wallet_AppUITestsLaunchTests.swift */,
+			);
+			path = "My Wallet AppUITests";
+			sourceTree = "<group>";
+		};
+		18F17E322B526DD1002B5C43 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E342B526DE0002B5C43 /* SideMenuViewModel.swift */,
+				18F17E352B526DE0002B5C43 /* Transaction.swift */,
+				18F17E332B526DE0002B5C43 /* TransactionViewModel.swift */,
+				18F17E362B526DE0002B5C43 /* Validation.swift */,
+				18F17E602B52771A002B5C43 /* Profile.swift */,
+				18F17E622B5277C0002B5C43 /* AuthService.swift */,
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
+		18F17E3B2B526DFB002B5C43 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E3D2B526E14002B5C43 /* View */,
+				18F17E3C2B526E09002B5C43 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18F17E3C2B526E09002B5C43 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E422B526E2F002B5C43 /* CustomButtonText.swift */,
+				18F17E402B526E2F002B5C43 /* SideMenuOptionRowView.swift */,
+				18F17E3F2B526E2F002B5C43 /* SideMenuView.swift */,
+				18F17E552B526F1B002B5C43 /* WelcomeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		18F17E3D2B526E14002B5C43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				186C6E7C2B5BB6F0006DC0DC /* Amount View */,
+				186C6E792B5BB6CB006DC0DC /* Confirmation View */,
+				186C6E762B5BB64D006DC0DC /* Home View */,
+				18F17E3E2B526E1C002B5C43 /* Login */,
+				186C6E7F2B5BB713006DC0DC /* Output  View */,
+				186C6E802B5BB7AB006DC0DC /* Phone View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18F17E3E2B526E1C002B5C43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E472B526E39002B5C43 /* LoginView.swift */,
+				18F17E482B526E39002B5C43 /* RegistrationView.swift */,
+				18F17E692B52C7B3002B5C43 /* ResetPasswordView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		18F17E682B5299AA002B5C43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F17E642B527FF9002B5C43 /* MainView.swift */,
+				18F17E662B52809C002B5C43 /* AuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F17E002B526D14002B5C43 /* My Wallet App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F17E252B526D16002B5C43 /* Build configuration list for PBXNativeTarget "My Wallet App" */;
+			buildPhases = (
+				18F17DFD2B526D14002B5C43 /* Sources */,
+				18F17DFE2B526D14002B5C43 /* Frameworks */,
+				18F17DFF2B526D14002B5C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Wallet App";
+			packageProductDependencies = (
+				18F17E5A2B5274B2002B5C43 /* FirebaseAuth */,
+				18F17E5C2B5274B2002B5C43 /* FirebaseFirestore */,
+				18F17E5E2B5274B2002B5C43 /* FirebaseFirestoreSwift */,
+			);
+			productName = "My Wallet App";
+			productReference = 18F17E012B526D14002B5C43 /* My Wallet App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F17E102B526D16002B5C43 /* My Wallet AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F17E282B526D16002B5C43 /* Build configuration list for PBXNativeTarget "My Wallet AppTests" */;
+			buildPhases = (
+				18F17E0D2B526D16002B5C43 /* Sources */,
+				18F17E0E2B526D16002B5C43 /* Frameworks */,
+				18F17E0F2B526D16002B5C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F17E132B526D16002B5C43 /* PBXTargetDependency */,
+			);
+			name = "My Wallet AppTests";
+			productName = "My Wallet AppTests";
+			productReference = 18F17E112B526D16002B5C43 /* My Wallet AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18F17E1A2B526D16002B5C43 /* My Wallet AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F17E2B2B526D16002B5C43 /* Build configuration list for PBXNativeTarget "My Wallet AppUITests" */;
+			buildPhases = (
+				18F17E172B526D16002B5C43 /* Sources */,
+				18F17E182B526D16002B5C43 /* Frameworks */,
+				18F17E192B526D16002B5C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F17E1D2B526D16002B5C43 /* PBXTargetDependency */,
+			);
+			name = "My Wallet AppUITests";
+			productName = "My Wallet AppUITests";
+			productReference = 18F17E1B2B526D16002B5C43 /* My Wallet AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F17DF92B526D14002B5C43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					18F17E002B526D14002B5C43 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					18F17E102B526D16002B5C43 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 18F17E002B526D14002B5C43;
+					};
+					18F17E1A2B526D16002B5C43 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 18F17E002B526D14002B5C43;
+					};
+				};
+			};
+			buildConfigurationList = 18F17DFC2B526D14002B5C43 /* Build configuration list for PBXProject "My Wallet App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F17DF82B526D14002B5C43;
+			packageReferences = (
+				18F17E592B5274B2002B5C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 18F17E022B526D14002B5C43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F17E002B526D14002B5C43 /* My Wallet App */,
+				18F17E102B526D16002B5C43 /* My Wallet AppTests */,
+				18F17E1A2B526D16002B5C43 /* My Wallet AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F17DFF2B526D14002B5C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F17E0C2B526D16002B5C43 /* Preview Assets.xcassets in Resources */,
+				18F17E092B526D16002B5C43 /* Assets.xcassets in Resources */,
+				18F17E582B5273DB002B5C43 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F17E0F2B526D16002B5C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F17E192B526D16002B5C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F17DFD2B526D14002B5C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F17E382B526DE0002B5C43 /* SideMenuViewModel.swift in Sources */,
+				18F17E652B527FF9002B5C43 /* MainView.swift in Sources */,
+				18F17E512B526E48002B5C43 /* HomeView.swift in Sources */,
+				18F17E432B526E2F002B5C43 /* SideMenuView.swift in Sources */,
+				18F17E4A2B526E39002B5C43 /* RegistrationView.swift in Sources */,
+				18F17E072B526D14002B5C43 /* ContentView.swift in Sources */,
+				18F17E052B526D14002B5C43 /* My_Wallet_AppApp.swift in Sources */,
+				18F17E632B5277C0002B5C43 /* AuthService.swift in Sources */,
+				18F17E532B526E48002B5C43 /* OutputView.swift in Sources */,
+				18F17E442B526E2F002B5C43 /* SideMenuOptionRowView.swift in Sources */,
+				18F17E372B526DE0002B5C43 /* TransactionViewModel.swift in Sources */,
+				18F17E462B526E2F002B5C43 /* CustomButtonText.swift in Sources */,
+				18F17E522B526E48002B5C43 /* ConfirmationView.swift in Sources */,
+				18F17E492B526E39002B5C43 /* LoginView.swift in Sources */,
+				18F17E562B526F1B002B5C43 /* WelcomeView.swift in Sources */,
+				18F17E3A2B526DE0002B5C43 /* Validation.swift in Sources */,
+				18F17E542B526E48002B5C43 /* InputAmountView.swift in Sources */,
+				18F17E612B52771A002B5C43 /* Profile.swift in Sources */,
+				18F17E502B526E48002B5C43 /* PhoneBookView.swift in Sources */,
+				18F17E6A2B52C7B3002B5C43 /* ResetPasswordView.swift in Sources */,
+				18F17E672B52809C002B5C43 /* AuthView.swift in Sources */,
+				18F17E392B526DE0002B5C43 /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F17E0D2B526D16002B5C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F17E162B526D16002B5C43 /* My_Wallet_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F17E172B526D16002B5C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F17E202B526D16002B5C43 /* My_Wallet_AppUITests.swift in Sources */,
+				18F17E222B526D16002B5C43 /* My_Wallet_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F17E132B526D16002B5C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F17E002B526D14002B5C43 /* My Wallet App */;
+			targetProxy = 18F17E122B526D16002B5C43 /* PBXContainerItemProxy */;
+		};
+		18F17E1D2B526D16002B5C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F17E002B526D14002B5C43 /* My Wallet App */;
+			targetProxy = 18F17E1C2B526D16002B5C43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18F17E232B526D16002B5C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18F17E242B526D16002B5C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F17E262B526D16002B5C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"My Wallet App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Development-Project.My-Wallet-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18F17E272B526D16002B5C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"My Wallet App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Development-Project.My-Wallet-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18F17E292B526D16002B5C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Development-Project.My-Wallet-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Wallet App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/My Wallet App";
+			};
+			name = Debug;
+		};
+		18F17E2A2B526D16002B5C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Development-Project.My-Wallet-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Wallet App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/My Wallet App";
+			};
+			name = Release;
+		};
+		18F17E2C2B526D16002B5C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Development-Project.My-Wallet-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My Wallet App";
+			};
+			name = Debug;
+		};
+		18F17E2D2B526D16002B5C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Development-Project.My-Wallet-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My Wallet App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F17DFC2B526D14002B5C43 /* Build configuration list for PBXProject "My Wallet App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F17E232B526D16002B5C43 /* Debug */,
+				18F17E242B526D16002B5C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F17E252B526D16002B5C43 /* Build configuration list for PBXNativeTarget "My Wallet App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F17E262B526D16002B5C43 /* Debug */,
+				18F17E272B526D16002B5C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F17E282B526D16002B5C43 /* Build configuration list for PBXNativeTarget "My Wallet AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F17E292B526D16002B5C43 /* Debug */,
+				18F17E2A2B526D16002B5C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F17E2B2B526D16002B5C43 /* Build configuration list for PBXNativeTarget "My Wallet AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F17E2C2B526D16002B5C43 /* Debug */,
+				18F17E2D2B526D16002B5C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18F17E592B5274B2002B5C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18F17E5A2B5274B2002B5C43 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F17E592B5274B2002B5C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		18F17E5C2B5274B2002B5C43 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F17E592B5274B2002B5C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		18F17E5E2B5274B2002B5C43 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18F17E592B5274B2002B5C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 18F17DF92B526D14002B5C43 /* Project object */;
+}

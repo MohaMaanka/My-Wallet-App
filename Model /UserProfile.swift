@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Profile : Codable {
+struct UserProfile : Codable {
     var name : String
     
     init(name: String? = nil ) {

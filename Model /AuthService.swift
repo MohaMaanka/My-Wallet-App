@@ -18,7 +18,7 @@ enum AuthState {
 }
 class AuthService: ObservableObject {
     
-    @Published var profile = Profile()
+    @Published var profile = UserProfile()
     @Published var authState: AuthState = .undefined
     @Published var uid: String = ""
     
@@ -50,7 +50,7 @@ class AuthService: ObservableObject {
     
     func createProfile(name : String) throws {
         let reference = Firestore.firestore().collection("profiles").document(uid)
-        let profile = Profile(name: name)
+        let profile = UserProfile(name: name)
         try reference.setData(from: profile)
     }
     
@@ -65,7 +65,7 @@ class AuthService: ObservableObject {
     
     func fetchProfile() async throws {
         let reference = Firestore.firestore().collection("profiles").document(uid)
-        let profile = try await reference.getDocument(as: Profile.self)
+        let profile = try await reference.getDocument(as: UserProfile.self)
         DispatchQueue.main.async { // Ensure UI updates are on the main thread
             self.profile = profile
         }

@@ -49,7 +49,7 @@ class AuthService: ObservableObject {
     }
     
     func createProfile(name : String) throws {
-        let reference = Firestore.firestore().collection("profiles").document(uid)
+        let reference = Firestore.firestore().collection("UserProfile").document(uid)
         let profile = UserProfile(name: name)
         try reference.setData(from: profile)
     }
@@ -64,7 +64,7 @@ class AuthService: ObservableObject {
     }
     
     func fetchProfile() async throws {
-        let reference = Firestore.firestore().collection("profiles").document(uid)
+        let reference = Firestore.firestore().collection("UserProfile").document(uid)
         let profile = try await reference.getDocument(as: UserProfile.self)
         DispatchQueue.main.async { // Ensure UI updates are on the main thread
             self.profile = profile
